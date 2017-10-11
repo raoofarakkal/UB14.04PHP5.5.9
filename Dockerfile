@@ -4,7 +4,7 @@ MAINTAINER Abdulraoof Arakkal <raoofabdul@gmail.com>
 # disable interactive functions
 ENV DEBIAN_FRONTEND noninteractive
 
-# Install apache, PHP, and supplimentary programs. openssh-server, curl, and lynx-cur are for debugging the container.
+# Install apache, PHP, and supplimentary programs.
 RUN apt-get update && apt-get -y upgrade && \
     apt-get install -y apache2 \
     php5 libapache2-mod-php5  \
