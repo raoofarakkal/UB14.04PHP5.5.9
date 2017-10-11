@@ -10,7 +10,7 @@ RUN apt-get update && apt-get -y upgrade && \
     php5 libapache2-mod-php5  \
     php5-fpm php5-cli php5-mysql \
     php5-apcu php5-intl php5-imagick php5-mcrypt php5-json php5-gd php5-curl \
-    php5enmod mcrypt && \
+    mcrypt && \
     rm -rf /var/lib/apt/lists/* && \
     cd /tmp && curl -sS https://getcomposer.org/installer | php && \
     mv composer.phar /usr/local/bin/composer
